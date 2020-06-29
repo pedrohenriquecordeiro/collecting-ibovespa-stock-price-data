@@ -23,7 +23,7 @@ def handle_component_by_tag_name(driver, tag_name):
         )
         return component
     except:
-        print('\n[ERROR: can not find:' + str(xpath) + ']\n')
+        print('\n[ERROR: can not find:' + str(tag_name) + ']\n')
         return None
 
 
