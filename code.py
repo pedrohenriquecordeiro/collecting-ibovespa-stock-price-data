@@ -17,22 +17,19 @@ tbody = handle_component_by_xpath(
     driver,
     '/html/body/div[6]/section/div[8]/table/tbody'
 )
-print(tbody)
-
 
 # get tr in tbody
-trs = handle_all_components_by_tag_name(tbody, 'tr')
-print(trs)
+trs = tbody.find_elements_by_tag_name('tr')
 
-'''
 # loop in row of table
 for tr in trs:
-    a = handle_component_by_xpath(
-        tr, '/td[2]/a'
-    )
+    a = tr.find_element_by_tag_name('a')
     stock_name = a.get_attribute('textContent')
-    print(stock_name)
+    td_last_price = tr.find_element_by_xpath('//td[3]')
+    last_price = td_last_price.get_attribute('textContent')
 
-'''
+    print(stock_name,last_price)
+
+
 
 driver.quit()
