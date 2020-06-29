@@ -16,7 +16,7 @@
 ## How run it :arrow_forward:
 At cmd or terminal, clone this project:
 ```
-> git clone https://github.com/pedrohenriquecordeiro/deep_learning_classification_garments.git
+> git clone https://github.com/pedrohenriquecordeiro/collecting-ibovespa-stock-price-data.git
 ```
 Enter into folder:
 ```
@@ -32,4 +32,3 @@ Run code:
 ```
 > python code.py
 ```
-Open this notebook by Jupyter Notebook.
