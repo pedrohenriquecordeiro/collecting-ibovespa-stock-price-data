@@ -44,17 +44,6 @@ for tr in trs:
 with open('stocks_today.csv', 'a') as stock_file:
     stock_file.write(header[1:] + '\n')
 
-for tr in trs:
-    # anchor tag
-    a = tr.find_element_by_tag_name('a')
-    stock_name = a.get_attribute('textContent')
-
-    if 'ON' in stock_name:  # only stock ON
-        # td tag
-        td_last_price = tr.find_element_by_xpath('./td[3]')
-        last_price = td_last_price.get_attribute('textContent')
-        print(stock_name, last_price)
-
 # looping in rows of table
 while(True):
     # getting prices
