@@ -6,7 +6,7 @@
 
 ## Project Description
 <p align="justify"> 
-    Web Scrapping to collect Ibovespa Stock Price DATA
+    Web Scrapping to collect Ibovespa Stock Price Data
 </p>
 
 ## Dependencies
@@ -26,7 +26,7 @@ Install the dependencies:
 ```
 > pip install selenium
 ```
-Download driver to Google Chrome [here](https://chromedriver.chromium.org/downloads)
+Download driver to Google Chrome [here](https://chromedriver.chromium.org/downloads).
 
 Run code:
 ```
